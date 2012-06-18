@@ -1,2 +1,4 @@
-laf
-===
+Look and Feel Grails Plugin
+===========================
+
+Yay!
