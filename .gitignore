@@ -9,3 +9,10 @@
 /out/**
 stacktrace.log
 test/reports
+.link_to_grails_plugins
+application.properties
+*.zip
+target
+web-app/WEB-INF
+web-app/META-INF
+
