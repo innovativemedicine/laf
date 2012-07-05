@@ -27,10 +27,11 @@ resource url:'/less/about.less', attrs:[ rel: "stylesheet/less", type:'css' ], b
 	  resource url:'js/bootstrap/bootstrap-carousel.js'
 	  resource url:'js/bootstrap/bootstrap-dropdown.js'
 	  resource url:'js/bootstrap/bootstrap-modal.js'
+	  resource url:'js/bootstrap/bootstrap-tooltip.js'
 	  resource url:'js/bootstrap/bootstrap-popover.js'
 	  resource url:'js/bootstrap/bootstrap-scrollspy.js'
 	  resource url:'js/bootstrap/bootstrap-tab.js'
-	  resource url:'js/bootstrap/bootstrap-tooltip.js'
+
 	  resource url:'js/bootstrap/bootstrap-transition.js'
 	  resource url:'js/bootstrap/bootstrap-typeahead.js'
 
