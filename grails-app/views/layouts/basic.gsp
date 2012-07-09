@@ -12,7 +12,7 @@
 
 <r:require modules="app"/>
 <link rel="shortcut icon"
-	href="${resource(dir: 'images/common', file: '')}/${grailsApplication.config.laf.appCode}.ico"
+	href="/images/custom/app.ico"
 	type="image/x-icon">
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
