@@ -18,8 +18,8 @@ resource url:'/less/about.less', attrs:[ rel: "stylesheet/less", type:'css' ], b
 	 resource url: [ plugin: 'laf', dir: 'css', file: 'dummy.css' ], bundle: 'bundle_laf'
         
         
-      resource url:'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'
-    
+      resource url:'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'
+	  resource url:'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js'
 
       resource url:'js/bootstrap/bootstrap-alert.js'
       resource url:'js/bootstrap/bootstrap-collapse.js'
