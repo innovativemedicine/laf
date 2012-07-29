@@ -12,7 +12,7 @@
 
 <r:require modules="app"/>
 <link rel="shortcut icon"
-	href="/images/custom/app.ico"
+	href="${r.resource(dir:"images/custom/app.ico")}"
 	type="image/x-icon">
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
