@@ -10,10 +10,9 @@
 
 
 
-<r:require modules="app"/>
+<r:require modules="app" />
 <link rel="shortcut icon"
-	href="${r.resource(dir:"images/custom/app.ico")}"
-	type="image/x-icon">
+	href="${r.resource(dir:"images/custom/app.ico")}" type="image/x-icon">
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -30,59 +29,75 @@
 </head>
 <body>
 	<div class="navbar navbar-fixed-top">
-	
-		    <div class="navbar-inner" id="upperNav">
-			    <div class="container">
-
-					  <div class="nav-collapse">
-						<ul class="nav pull-right">
-							<li><a title="Mount Sinai Hospital" href="http://www.mountsinai.on.ca/">Mount Sinai</a></li>
-							<li><a title="Samuel Lunenfeld Research Institue" href="http://www.lunenfeld.ca/">SLRI</a></li>
-							<li><a title="innovativemedicine.ca" href="http://innovativemedicine.ca">Innovative Medicine</a></li>
-							<li><a title="clinicgenomics.ca" href="http://clinicalgenomics.ca">Clinical Genomics</a></li>
-						  <li><a title="Follow us on Twitter!" href="https://twitter.com/innovative_med">Follow Us <r:img style="height: 12px;" dir="images/common" file="twitter_newbird_white.png"/></a></li>
-						</ul>
-					  </div>
-
-				</div>
+		<div class="navbar-inner" id="brandBar">
+			<div class="container">
+				<ul class="nav pull-right" >
+					<li><a class="sGroup"
+						title="http://www.lunenfeld.ca/researchers/siminovitch"
+						style="font-style: italic;"
+						href="http://www.lunenfeld.ca/researchers/siminovitch"> The
+							Siminovitch Group<span
+							style="font-style: normal; font-weight: bold;">:</span>
+					</a></li>
+					<li><a class="satelite appIM" title="innovativemedicine.ca"
+						href="http://innovativemedicine.ca">Innovative Medicine</a></li>
+					<li><a class="satelite appCG" title="clinicgenomics.ca"
+						href="http://clinicalgenomics.ca">Clinical Genomics</a></li>
+					<li><a class="satelite appGS" title="geneticservices.ca"
+						href="http://geneticservices.ca">Genetic Services</a></li>
+					<li><a class="satelite appSL" title="simminovitchlab.ca"
+						href="http://siminovitchlab.ca">Siminovitch Lab</a></li>
+					<li><a class="sGroup" style="font-style: italic; font-weight: normal; margin-right: 0px; padding-right: 0px;"
+						title="Follow us on Twitter!"
+						href="https://twitter.com/innovative_med"><r:img
+								style="height: 12px;" dir="images/common"
+								file="twitter_newbird_white.png" />Follow Us...</a></li>
+				</ul>
 			</div>
-			
-			<div class="navbar-inner" id="lowerNav">
-				<div class="container">
-				<g:link class="brand" mapping="home">
-					${grailsApplication.config.laf.appName}
-					</g:link>
-			
-					<div class="nav-collapse">
-						<ul class="nav">
-							<g:render template="/navigation" />
 
-						</ul>
-							<div class="nav-collapse pull-right"  style="padding-top: 10px;">
-						<ul class="nav">
- 
-                               
-						</ul>
-						</div>
-					</div>
-                 
-				</div>
-			</div>
-			
-			 <div class="appstripe"
-			style="background-color: ${grailsApplication.config.laf.appColor};"></div> 
-	     
 		</div>
 
+		<div class="navbar-inner" id="upperNav">
+			
+
+		</div>
+
+		<div class="navbar-inner" id="lowerNav">
+			<div class="container">
+				<g:link class="brand" mapping="home">
+					${grailsApplication.config.laf.appName}
+				</g:link>
+
+				<div class="nav-collapse">
+					<ul class="nav">
+						<g:render template="/navigation" />
+
+					</ul>
+					<div class="nav-collapse pull-right" style="padding-top: 10px;">
+						<ul class="nav">
+
+
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="appstripe"
+			style="background-color: ${grailsApplication.config.laf.appColor};"></div>
+
+	</div>
 
 
 
-		<div class="container layoutBody">
-	
-	
+
+	<div class="container layoutBody">
+
+
 
 		<g:if test="${pageProperty(name:'page.header') != ''}">
-			<g:pageProperty name="page.header" /> 
+			<g:pageProperty name="page.header" />
 			<br />
 		</g:if>
 		<g:else>
@@ -97,42 +112,47 @@
 		<g:if test="${flash.message}">
 			<div class="alert alert-block alert-error fade in">
 
-				<strong>
-					${flash.message}
+				<strong> ${flash.message}
 				</strong>
 			</div>
 
 		</g:if>
-	
+
 		<g:layoutBody />
-		</div>
+	</div>
 
 
 	<footer class="footer">
-	     
+
 		<div class="container">
 			<g:render template="/footer" />
 		</div>
 	</footer>
-	<g:if env="production" >
+	<g:if env="production">
 
 		<script type="text/javascript">
 		
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-29124036-1']);
-		  _gaq.push(['_setDomainName', '${grailsApplication.config.laf.analyticsTitle}']);
-		  _gaq.push(['_setAllowLinker', true]);
-		  _gaq.push(['_trackPageview']);
-		
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		
+		  _gaq.push(['_setDomainName', '${grailsApplication.config.laf.analyticsTitle}
+			' ]);
+            _gaq.push([ '_setAllowLinker', true ]);
+            _gaq.push([ '_trackPageview' ]);
+
+            (function()
+            {
+	            var ga = document.createElement('script');
+	            ga.type = 'text/javascript';
+	            ga.async = true;
+	            ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+	                    : 'http://www')
+	                    + '.google-analytics.com/ga.js';
+	            var s = document.getElementsByTagName('script')[0];
+	            s.parentNode.insertBefore(ga, s);
+            })();
 		</script>
-	   
-    </g:if>
+
+	</g:if>
 
 	<r:layoutResources />
 
