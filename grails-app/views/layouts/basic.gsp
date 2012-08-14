@@ -28,7 +28,7 @@
 
 </head>
 <body>
-	<div class="navbar navbar-fixed-top">
+	<div class="navbar">
 		<div class="navbar-inner" id="brandBar">
 			<div class="container">
 				<ul class="nav pull-right" >
@@ -39,13 +39,13 @@
 							Siminovitch Group<span
 							style="font-style: normal; font-weight: bold;">:</span>
 					</a></li>
-					<li><a class="satelite appIM" title="innovativemedicine.ca"
+					<li><a class="satellite appIM" title="innovativemedicine.ca"
 						href="http://innovativemedicine.ca">Innovative Medicine</a></li>
-					<li><a class="satelite appCG" title="clinicgenomics.ca"
+					<li><a class="satellite appCG" title="clinicgenomics.ca"
 						href="http://clinicalgenomics.ca">Clinical Genomics</a></li>
-					<li><a class="satelite appGS" title="geneticservices.ca"
+					<li><a class="satellite appGS" title="geneticservices.ca"
 						href="http://geneticservices.ca">Genetic Services</a></li>
-					<li><a class="satelite appSL" title="simminovitchlab.ca"
+					<li><a class="satellite appSL" title="simminovitchlab.ca"
 						href="http://siminovitchlab.ca">Siminovitch Lab</a></li>
 					<li><a class="sGroup" style="font-style: italic; font-weight: normal; margin-right: 0px; padding-right: 0px;"
 						title="Follow us on Twitter!"
@@ -112,8 +112,8 @@
 		<g:if test="${flash.message}">
 			<div class="alert alert-block alert-error fade in">
 
-				<strong> ${flash.message}
-				</strong>
+				<strong> ${flash.message}</strong>
+				<!--  ${flash.message = null} -->
 			</div>
 
 		</g:if>
@@ -134,8 +134,7 @@
 		
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-29124036-1']);
-		  _gaq.push(['_setDomainName', '${grailsApplication.config.laf.analyticsTitle}
-			' ]);
+		  _gaq.push(['_setDomainName', '${grailsApplication.config.laf.analyticsTitle}' ]);
             _gaq.push([ '_setAllowLinker', true ]);
             _gaq.push([ '_trackPageview' ]);
 
@@ -144,9 +143,7 @@
 	            var ga = document.createElement('script');
 	            ga.type = 'text/javascript';
 	            ga.async = true;
-	            ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-	                    : 'http://www')
-	                    + '.google-analytics.com/ga.js';
+	            ga.src = ('https:' == document.location.protocol ? 'https://ssl': 'http://www') + '.google-analytics.com/ga.js';
 	            var s = document.getElementsByTagName('script')[0];
 	            s.parentNode.insertBefore(ga, s);
             })();
