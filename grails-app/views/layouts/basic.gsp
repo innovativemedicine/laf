@@ -40,13 +40,13 @@
 							style="font-style: normal; font-weight: bold;">:</span>
 					</a></li>
 					<li><a class="satellite appIM" title="innovativemedicine.ca"
-						href="http://innovativemedicine.ca">Innovative Medicine</a></li>
+						href="http://innovativemedicine.ca"><div>&nbsp;</div> Innovative Medicine</a></li>
 					<li><a class="satellite appCG" title="clinicgenomics.ca"
-						href="http://clinicalgenomics.ca">Clinical Genomics</a></li>
+						href="http://clinicalgenomics.ca"><div>&nbsp;</div>Clinical Genomics</a></li>
 					<li><a class="satellite appGS" title="geneticservices.ca"
-						href="http://geneticservices.ca">Genetic Services</a></li>
+						href="http://geneticservices.ca"><div>&nbsp;</div>Genetic Services</a></li>
 					<li><a class="satellite appSL" title="simminovitchlab.ca"
-						href="http://siminovitchlab.ca">Siminovitch Lab</a></li>
+						href="http://siminovitchlab.ca"><div>&nbsp;</div>Siminovitch Lab</a></li>
 					<li><a class="sGroup" style="font-style: italic; font-weight: normal; margin-right: 0px; padding-right: 0px;"
 						title="Follow us on Twitter!"
 						href="https://twitter.com/innovative_med"><r:img
