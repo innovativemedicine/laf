@@ -41,7 +41,7 @@
 					</a></li>
 					<li><a class="satellite appIM" title="innovativemedicine.ca"
 						href="http://innovativemedicine.ca"><div>&nbsp;</div> Innovative Medicine</a></li>
-					<li><a class="satellite appCG" title="clinicgenomics.ca"
+					<li><a class="satellite appCG" title="clinicalgenomics.ca"
 						href="http://clinicalgenomics.ca"><div>&nbsp;</div>Clinical Genomics</a></li>
 					<li><a class="satellite appGS" title="geneticservices.ca"
 						href="http://geneticservices.ca"><div>&nbsp;</div>Genetic Services</a></li>
