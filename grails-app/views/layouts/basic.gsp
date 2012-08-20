@@ -28,7 +28,7 @@
 
 </head>
 <body>
-	<div class="navbar">
+	<div class="navbar" id="standard">
 		<div class="navbar-inner" id="brandBar">
 			<div class="container">
 				<ul class="nav pull-right" >
