@@ -18,49 +18,58 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title><g:layoutTitle default="" /> - ${grailsApplication.config.laf.siteTitle}</title>
 
-
+<r:layoutResources />
 <g:layoutHead />
 
 
-<r:layoutResources />
+<style>
+
+   #lowerNav ul.nav li.active {
+        border-color: ${grailsApplication.config.laf.appColor};
+    }
+</style>
 
 
 
 </head>
 <body>
-	<div class="navbar" id="standard">
+
+
+	<div class="navbar navbar-inverse navbar-static-top" id="standard">
+
 		<div class="navbar-inner" id="brandBar">
-			<div class="container">
-				<ul class="nav pull-right" >
+		  <div class="container">
+				<ul class="nav pull-right">
 					<li><a class="sGroup"
 						title="http://www.lunenfeld.ca/researchers/siminovitch"
-						style="font-style: italic;"
+				
 						href="http://www.lunenfeld.ca/researchers/siminovitch"> The
-							Siminovitch Group<span
-							style="font-style: normal; font-weight: bold;">:</span>
+							Siminovitch Group:
 					</a></li>
 					<li><a class="satellite appIM" title="innovativemedicine.ca"
-						href="http://innovativemedicine.ca"><div>&nbsp;</div> Innovative Medicine</a></li>
+						href="http://innovativemedicine.ca"><div>&nbsp;</div>
+							Innovative Medicine</a></li>
 					<li><a class="satellite appCG" title="clinicalgenomics.ca"
-						href="http://clinicalgenomics.ca"><div>&nbsp;</div>Clinical Genomics</a></li>
+						href="http://clinicalgenomics.ca"><div>&nbsp;</div>Clinical
+							Genomics</a></li>
 					<li><a class="satellite appGS" title="geneticservices.ca"
-						href="http://geneticservices.ca"><div>&nbsp;</div>Genetic Services</a></li>
+						href="http://geneticservices.ca"><div>&nbsp;</div>Genetic
+							Services</a></li>
 					<li><a class="satellite appSL" title="simminovitchlab.ca"
-						href="http://siminovitchlab.ca"><div>&nbsp;</div>Siminovitch Lab</a></li>
-					<li><a class="sGroup" style="font-style: italic; font-weight: normal; margin-right: 0px; padding-right: 0px;"
+						href="http://siminovitchlab.ca"><div>&nbsp;</div>Siminovitch
+							Lab</a></li>
+					<li><a class="sGroup"
+						style="margin-right: 0px; padding-right: 0px;"
 						title="Follow us on Twitter!"
 						href="https://twitter.com/innovative_med"><r:img
 								style="height: 12px;" dir="images/common"
-								file="twitter_newbird_white.png" />Follow Us...</a></li>
+								file="twitter_newbird_white.png" /> Follow Us...</a></li>
 				</ul>
-			</div>
-
-		</div>
-
-		<div class="navbar-inner" id="upperNav">
 			
-
+</div>
 		</div>
+
+		<div class="navbar-inner" id="upperNav"></div>
 
 		<div class="navbar-inner" id="lowerNav">
 			<div class="container">
@@ -69,25 +78,20 @@
 				</g:link>
 
 				<div class="nav-collapse">
-					<ul class="nav">
+					<ul class="nav ">
 						<g:render template="/navigation" />
 
 					</ul>
-					<div class="nav-collapse pull-right" style="padding-top: 10px;">
-						<ul class="nav">
-
-
-						</ul>
-					</div>
+					
 				</div>
 
-			</div>
+		  </div>
 		</div>
-
-		<div class="appstripe"
-			style="background-color: ${grailsApplication.config.laf.appColor};"></div>
-
 	</div>
+	<div class="appstripe"
+		style="background-color: ${grailsApplication.config.laf.appColor};"></div>
+
+
 
 
 

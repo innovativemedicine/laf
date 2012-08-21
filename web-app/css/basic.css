@@ -1,0 +1,187 @@
+.navbar-inner {
+	
+}
+
+body,input,select,textarea {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+		"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.layoutBody {
+	margin-top: 20px;
+}
+
+h1 {
+	color: #5A5A5A;
+}
+
+#standard .navbar-inner {
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+.footer {
+	margin-top: 45px;
+	padding-top: 15px;
+	border-top: 1px solid #e5e5e5;
+	text-align: center;
+}
+
+.footer p {
+	margin-bottom: 0;
+	color: #555;
+}
+
+a.external {
+	background-image: url("../images/common/icon-external-link.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: right center;
+	padding-right: 13px;
+}
+
+#upperNav {
+	background-position: top center;
+	background-repeat: repeat-x;
+	overflow: hidden;
+	height: 70px;
+	-moz-box-shadow: inset 0 0 15px 3px #444;
+	-webkit-box-shadow: inset 0 0 15px 3px #444;
+	box-shadow: inset 0 0 15px 3px #444;
+}
+
+#lowerNav {
+	min-height: 36px !important;
+	overflow: hidden;
+	height: 36px !important;
+}
+
+#lowerNav a {
+	color: #fff !important;
+}
+
+#lowerNav a:hover {
+	
+}
+
+.appstripe {
+	height: 6px;
+	background-image: url(../images/common/shadow.png);
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+
+.brand {
+	letter-spacing: 1px !important;
+	padding-left: 0px !important;
+	margin-left: 0px !important;
+	background-color: none !important;
+}
+
+.satellite {
+	padding-left: 4px !important;
+}
+
+#brandBar a.sGroup {
+	font-style: italic;
+	padding-bottom: 0px !important;
+	padding-top: 0px !important;
+	padding-left: 5px !important;
+}
+
+#brandBar a.sGroup:hover {
+	background-color: #999 !important;
+	color: #fff !important;
+}
+
+#brandBar a {
+	font-size: 12px !important;
+	padding-bottom: 3px !important;
+	padding-top: 0px !important;
+	color: #fff !important;
+}
+
+#brandBar {
+	height: 20px !important;
+	padding: 0px !important;
+	overflow: hidden;
+	min-height: 20px;
+	/*
+    -moz-box-shadow:  1px 0 29px 3px #000;
+    -webkit-box-shadow:  1px 0 29px 3px #000;
+    box-shadow:  1px 0 29px 3px #000;
+    */
+}
+
+#brandBar a:hover {
+	text-shadow: none;
+}
+
+#brandBar a.satellite:hover {
+	color: #000;
+}
+
+#brandBar a.appCG:hover {
+	background-color: #8bfe01;
+}
+
+a.appCG div {
+	background-color: #8bfe01;
+}
+
+#brandBar a.appSL:hover {
+	background-color: #cc00ff;
+}
+
+a.appSL div {
+	background-color: #cc00ff;
+}
+
+#brandBar a.satellite {
+	padding-left: 0px !important;
+}
+
+#brandBar a.satellite div { /*
+	background-image: url(../images/common/leftShadow.png);
+	background-position: left;
+*/
+	padding-left: 0px !important;
+	background-repeat: repeat-y;
+	width: 3px;
+	height: 12px;
+	margin-top: 3px; float : left;
+	margin-right: 3px;
+	float: left;
+}
+
+#brandBar a.appGS:hover {
+	background-color: #0099ff;
+}
+
+#brandBar a.appIM:hover {
+	background-color: red;
+}
+
+a.appGS div {
+	background-color: #0099ff;
+}
+
+a.appIM div {
+	background-color: red;
+}
+
+a.brand {
+	
+}
+
+#lowerNav ul.nav li.active {
+	border-top: solid 3px #fff;
+	background-image: url(../images/common/shadow.png);
+	background-position: top;
+	background-repeat: repeat-x;
+}
+
+#lowerNav ul.nav li.active a {
+	padding-top: 7px !important;
+}

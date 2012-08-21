@@ -36,7 +36,7 @@ grails.project.dependency.resolution = {
   
         runtime ":resources:1.2-RC1"
         // runtime ':lesscss-resources:0.6.1'
-		runtime ':lesscss-resources:1.3.0.3'
+	//	runtime ':lesscss-resources:1.3.0.3'
         runtime ':fields:1.1'
     }
 }
