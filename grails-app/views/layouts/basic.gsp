@@ -98,29 +98,27 @@
 
 	<div class="container layoutBody">
 
+        <div id="alerts"></div>
+        <g:if test="${flash.message}">
+            <div class="alert alert-block alert-error fade in">
+                <strong> ${flash.message}</strong>
+                <!--  ${flash.message = null} -->
+            </div>
+        </g:if>
 
 
 		<g:if test="${pageProperty(name:'page.header') != ''}">
 			<g:pageProperty name="page.header" />
-			<br />
 		</g:if>
 		<g:else>
-			<div style="padding-bottom: 5px;">
+		
 				<h1>
 					${pageProperty(name:'title').replaceAll("- ${grailsApplication.config.laf.siteTitle}","")}
 				</h1>
-			</div>
+		
 		</g:else>
 
-
-		<g:if test="${flash.message}">
-			<div class="alert alert-block alert-error fade in">
-
-				<strong> ${flash.message}</strong>
-				<!--  ${flash.message = null} -->
-			</div>
-
-		</g:if>
+       
 
 		<g:layoutBody />
 	</div>
@@ -154,6 +152,8 @@
 		</script>
 
 	</g:if>
+	
+	<g:render plugin="laf" template="/layouts/alert"/>
 
 	<r:layoutResources />
 

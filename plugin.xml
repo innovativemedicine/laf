@@ -19,7 +19,6 @@
   <dependencies />
   <plugins>
     <runtime>
-      <plugin group='org.grails.plugins' name='jquery' version='1.7.1' />
       <plugin group='org.grails.plugins' name='hibernate' version='2.1.0' />
     </runtime>
     <build>

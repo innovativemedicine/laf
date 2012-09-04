@@ -1,9 +1,11 @@
 package laf
 
+
+
 class AlertController {
 
     def index() {
-        
-        return [appCode:params.appCode]
+        // flash.message ="hello"
+        return []
     }
 }
