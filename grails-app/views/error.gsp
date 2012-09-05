@@ -2,10 +2,15 @@
 <html>
 	<head>
 		<title>Grails Runtime Exception</title>
-		<meta name="layout" content="main">
-		<link rel="stylesheet" href="${resource(dir: 'css', file: 'errors.css')}" type="text/css">
+
 	</head>
 	<body>
+     
+     <p>We're sorry but an application error has occurred. Please try again and if the error persists
+      please let us know at <a href="mailto:info@innovativemedicine.ca">mailto:info@innovativemedicine.ca</a>.</p>
+     <!--  
 		<g:renderException exception="${exception}" />
+		
+		-->
 	</body>
 </html>

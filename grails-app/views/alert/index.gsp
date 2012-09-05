@@ -3,8 +3,10 @@
 -->
 
 <script type="text/javascript">
-	function hideAlert(id, cName, cValue)
+	function hideAlert(id)
     {
+		var cName = id;
+		var cValue = id;
 
 	    $('#'+id).modal('hide');
 	    $.cookie(cName, cValue,
@@ -14,9 +16,9 @@
 	    });
     }
 
-    if ($.cookie('cgCookie1') == null)
+    if ($.cookie('allCookieJob') == null)
     {
-	   // $('#cgModal').modal({backdrop:false});
+	    $('#allCookieJob').modal({backdrop:false});
     }
     
     function alertCallback(appCode)
@@ -50,24 +52,23 @@
 	</div>
 
 	<div class="slAlert" style="display: none;">
-		<div class="alert alert-block alert-info fade in"
-			style="display: none;">some application alert</div>
+		<div class="alert alert-block alert-info fade in">some application alert</div>
 	</div>
 </div>
 
 
 
 
-<div id="cgModal" class="modal hide fade">
+<div id="allCookieJob" class="modal hide fade">
 	<div class="modal-header">
-		<h3>Modal header</h3>
+		<h4>The Siminovitch Group is Hiring!</h4>
 	</div>
 	<div class="modal-body">
-		<p>One fine body…</p>
+		<p>For more details and to apply go <a href="https://mountsinai.mua.hrdepartment.com/ats/js_job_details.php?reqid=1640">here</a>.</p>
 	</div>
 	<div class="modal-footer">
 		<button class="btn"
-			onclick="hideAlert('cgModal','cgCookie', 'cgValue');">Close</button>
+			onclick="hideAlert('allCookieJob');">Close</button>
 	</div>
 </div>
 

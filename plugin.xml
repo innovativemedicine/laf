@@ -16,7 +16,11 @@
     <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
     <repository name='http://grails.org/plugins' url='http://grails.org/plugins' />
   </repositories>
-  <dependencies />
+  <dependencies>
+    <runtime>
+      <dependency group='mysql' name='mysql-connector-java' version='5.1.16' />
+    </runtime>
+  </dependencies>
   <plugins>
     <runtime>
       <plugin group='org.grails.plugins' name='hibernate' version='2.1.0' />
