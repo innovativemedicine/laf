@@ -16,9 +16,9 @@
 	    });
     }
 
-    if ($.cookie('allCookieJob') == null)
+    if ($.cookie('allCookieJob3') == null)
     {
-	    $('#allCookieJob').modal({backdrop:false});
+	    $('#allCookieJob3').modal({backdrop:false});
     }
     
     function alertCallback(appCode)
@@ -59,16 +59,22 @@
 
 
 
-<div id="allCookieJob" class="modal hide fade">
+<div id="allCookieJob3" class="modal hide fade">
 	<div class="modal-header">
-		<h4>The Siminovitch Group is Hiring!</h4>
+		<h4>The Siminovitch Group is hiring!</h4>
 	</div>
 	<div class="modal-body">
-		<p>For more details and to apply go <a href="https://mountsinai.mua.hrdepartment.com/ats/js_job_details.php?reqid=1640">here</a>.</p>
+		<p>We have three positions open. Follow the links below for more information and to apply:</p>
+		  <ul>
+		      <li><a href="https://mountsinai.mua.hrdepartment.com/ats/js_job_details.php?reqid=1646">Director of Strategic Opportunities</a></li>
+		      <li><a href="https://mountsinai.mua.hrdepartment.com/ats/js_job_details.php?reqid=1640">Programmer/Analyst (application development)</a></li>
+		      <li><a href="https://mountsinai.mua.hrdepartment.com/ats/js_job_details.php?reqid=1640">Systems Support for HPC and analysis pipelines</a></li>
+		  
+		  </ul> 
 	</div>
 	<div class="modal-footer">
 		<button class="btn"
-			onclick="hideAlert('allCookieJob');">Close</button>
+			onclick="hideAlert('allCookieJob3');">Close</button>
 	</div>
 </div>
 
