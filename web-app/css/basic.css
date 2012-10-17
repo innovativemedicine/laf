@@ -186,3 +186,25 @@ a.brand {
 #lowerNav ul.nav li.active a {
 	padding-top: 7px !important;
 }
+
+.ui-autocomplete {
+	
+	list-style: none;
+	background-color: #fff;
+	border: 1px solid #000;
+	width: 300px;
+	
+	
+}
+
+
+
+.ui-autocomplete li {
+	
+	list-style: none;
+}
+
+.ui-autocomplete li:hover {
+	
+	cursor: pointer;
+}
