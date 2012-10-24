@@ -54,12 +54,12 @@ a.external {
 
 #lowerNav {
 	min-height: 36px !important;
-	overflow: hidden;
+	
 	height: 36px !important;
 }
 
 #lowerNav a {
-	color: #fff !important;
+	color: #fff;
 }
 
 #lowerNav a:hover {
@@ -181,10 +181,12 @@ a.brand {
 	background-image: url(../images/common/shadow.png);
 	background-position: top;
 	background-repeat: repeat-x;
+
 }
 
 #lowerNav ul.nav li.active a {
-	padding-top: 7px !important;
+	padding-top:7px !important;
+	  padding-bottom: 3px !important;
 }
 
 .ui-autocomplete {

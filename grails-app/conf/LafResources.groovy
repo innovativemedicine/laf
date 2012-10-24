@@ -9,11 +9,11 @@ modules = {
 
 	
    
-		resource url:'bootstrap_2_1_0/js/bootstrap.min.js'
 		
+
       resource url:'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'
 	  resource url:'http://code.jquery.com/ui/1.9.0/jquery-ui.js'
-
+	  resource url:'bootstrap_2_1_0/js/bootstrap.min.js'
 
 	  resource url:"js/jquery.cookie.js"
     }
