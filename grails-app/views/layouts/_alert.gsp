@@ -1,15 +1,14 @@
+                
 <r:script>
+                      
 $(document).ready(function() 
                 {
+                
+                   var notice = '/alert.html';
                     try
                     {
                       var appCode ="${grailsApplication.config.laf.appCode}";
-                      <g:if env="production">
-                         var notice = '/alert.html';
-                      </g:if>
-                      <g:else>
-                         var notice = "${g.resource(dir:'alert', contextPath:'')}";
-                      </g:else>  
+                    
                         
                         $.get(notice, function(html) {
                             

@@ -16,9 +16,9 @@
         });
     }
 
-//    if ($.cookie('cgCookieAffy') == null)
+//    if ($.cookie('lafTest') == null)
 //    {
-//      $('#cgCookieAffy').modal({backdrop:false});
+//      $('#lafTest').modal({backdrop:false});
   //  }
     
     function alertCallback(appCode)
@@ -29,9 +29,9 @@
         $(selector).toggle();
         
         
-       if (appCode == 'cg' && $.cookie('cgCookieAffy') == null)
+       if (appCode == 'dex' && $.cookie('lafTest') == null)
     	   {
-    	   $('#cgCookieAffy').modal({backdrop:false});
+    	   $('#lafTest').modal({backdrop:false});
     	   
     	   }
     }
@@ -66,7 +66,7 @@
 
 
 
-<div id="cgCookieAffy" class="modal hide fade">
+<div id="lafTest" class="modal hide fade">
     <div class="modal-header">
         <h4>Lunch & Learn!</h4>
     </div>
@@ -89,6 +89,6 @@ at the Rebecca MacDonald Centre,
     </div>
     <div class="modal-footer">
         <button class="btn"
-            onclick="hideAlert('cgCookieAffy');">Close</button>
+            onclick="hideAlert('lafTest');">Close</button>
     </div>
 </div>
