@@ -8,7 +8,7 @@
 <!--<![endif]-->
 <head>
 
-     
+
 
 <r:require modules="app" />
 <link rel="shortcut icon"
@@ -23,10 +23,11 @@
 
 
 <style>
-
-   #lowerNav ul.nav li.active {
-        border-color: ${grailsApplication.config.laf.appColor};
-    }
+#lowerNav ul.nav li.active {
+	border-color: ${grailsApplication.config.laf.appColor
+}
+;
+}
 </style>
 
 
@@ -38,14 +39,12 @@
 	<div class="navbar navbar-inverse navbar-static-top" id="standard">
 
 		<div class="navbar-inner" id="brandBar">
-		  <div class="container">
+			<div class="container">
 				<ul class="nav pull-right">
 					<li><a class="sGroup"
 						title="http://www.lunenfeld.ca/researchers/siminovitch"
-				
 						href="http://www.lunenfeld.ca/researchers/siminovitch"> The
-							Siminovitch Group:
-					</a></li>
+							Siminovitch Group: </a></li>
 					<li><a class="satellite appIM" title="innovativemedicine.ca"
 						href="http://innovativemedicine.ca"><div>&nbsp;</div>
 							Innovative Medicine</a></li>
@@ -58,6 +57,27 @@
 					<li><a class="satellite appSL" title="simminovitchlab.ca"
 						href="http://siminovitchlab.ca"><div>&nbsp;</div>Siminovitch
 							Lab</a></li>
+					<li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">Internal<b class="caret"></b>
+					</a>
+
+						<ul id="internalDrop" class="dropdown-menu dropdownMenu">
+                            <li style="font-size: 12px; padding-left: 20px; padding-right: 20px;">Access and visibility&nbsp;restricted&nbsp;to&nbsp;within Mount&nbsp;Sinai&nbsp;Hospital only.</li>
+                            <li>
+                                 <a href="http://172.31.104.12/SampleTracking"><b class="icon-lock"></b>&nbsp;Sample Tracking</a>
+                            </li>
+                             <li>
+                                 <a href="http://172.31.104.12/gsle/mainPage"><b class="icon-lock"></b>&nbsp;Labratory Information Management System</a>
+                            </li>
+							<li>
+							     <a href="http://172.31.104.12/ap"><b class="icon-lock"></b>&nbsp;Analysis Portal</a>
+							</li>
+							<li>
+							     <a href="http://172.31.104.12/iris2"><b class="icon-lock"></b>&nbsp;Inflamatory Research Informatics System 2</a>
+							</li>
+							 
+						</ul></li>
 					<li><a class="sGroup"
 						style="margin-right: 0px; padding-right: 0px;"
 						title="Follow us on Twitter!"
@@ -65,8 +85,8 @@
 								style="height: 12px;" dir="images/common"
 								file="twitter_newbird_white.png" /> Follow Us...</a></li>
 				</ul>
-			
-</div>
+
+			</div>
 		</div>
 
 		<div class="navbar-inner" id="upperNav"></div>
@@ -82,10 +102,10 @@
 						<g:render template="/navigation" />
 
 					</ul>
-					
+
 				</div>
 
-		  </div>
+			</div>
 		</div>
 	</div>
 	<div class="appstripe"
@@ -98,27 +118,27 @@
 
 	<div class="container layoutBody">
 
-        <div id="alerts"></div>
-        <g:if test="${flash.message}">
-            <div class="alert alert-block alert-error fade in">
-                <strong> ${flash.message}</strong>
-                <!--  ${flash.message = null} -->
-            </div>
-        </g:if>
+		<div id="alerts"></div>
+		<g:if test="${flash.message}">
+			<div class="alert alert-block alert-error fade in">
+				<strong> ${flash.message}</strong>
+				<!--  ${flash.message = null} -->
+			</div>
+		</g:if>
 
 
 		<g:if test="${pageProperty(name:'page.header') != ''}">
 			<g:pageProperty name="page.header" />
 		</g:if>
 		<g:else>
-		
-				<h1>
-					${pageProperty(name:'title').replaceAll("- ${grailsApplication.config.laf.siteTitle}","")}
-				</h1>
-		
+
+			<h1>
+				${pageProperty(name:'title').replaceAll("- ${grailsApplication.config.laf.siteTitle}","")}
+			</h1>
+
 		</g:else>
 
-       
+
 
 		<g:layoutBody />
 	</div>
@@ -136,7 +156,8 @@
 		
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-29124036-1']);
-		  _gaq.push(['_setDomainName', '${grailsApplication.config.laf.analyticsTitle}' ]);
+		  _gaq.push(['_setDomainName', '${grailsApplication.config.laf.analyticsTitle}
+			' ]);
             _gaq.push([ '_setAllowLinker', true ]);
             _gaq.push([ '_trackPageview' ]);
 
@@ -145,15 +166,17 @@
 	            var ga = document.createElement('script');
 	            ga.type = 'text/javascript';
 	            ga.async = true;
-	            ga.src = ('https:' == document.location.protocol ? 'https://ssl': 'http://www') + '.google-analytics.com/ga.js';
+	            ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+	                    : 'http://www')
+	                    + '.google-analytics.com/ga.js';
 	            var s = document.getElementsByTagName('script')[0];
 	            s.parentNode.insertBefore(ga, s);
             })();
 		</script>
 
 	</g:if>
-	
-	<g:render plugin="laf" template="/layouts/alert"/>
+
+	<g:render plugin="laf" template="/layouts/alert" />
 
 	<r:layoutResources />
 
