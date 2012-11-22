@@ -153,11 +153,11 @@
 	<g:if env="production">
 
 		<script type="text/javascript">
-		
+		try
+		{
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-29124036-1']);
-		  _gaq.push(['_setDomainName', '${grailsApplication.config.laf.analyticsTitle}
-			' ]);
+		  _gaq.push(['_setDomainName', '${grailsApplication.config.laf.analyticsTitle}']);
             _gaq.push([ '_setAllowLinker', true ]);
             _gaq.push([ '_trackPageview' ]);
 
@@ -172,6 +172,9 @@
 	            var s = document.getElementsByTagName('script')[0];
 	            s.parentNode.insertBefore(ga, s);
             })();
+		}
+		catch(ignored)
+		{}
 		</script>
 
 	</g:if>
