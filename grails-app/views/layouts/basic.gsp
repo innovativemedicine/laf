@@ -30,60 +30,44 @@
 <body>
 
 
-	<div class="navbar navbar-inverse navbar-static-top" id="standard">
+	<div class="navbar  navbar-static-top" id="standard" >
 
 		<div class="navbar-inner" id="brandBar">
 			<div class="container">
+			 <ul class="nav">
+                  <li><a class="sGroup"
+                        style="margin-right: 0px; padding-right: 0px;"
+                        title="Follow us on Twitter!"
+                        href="https://twitter.com/innovative_med"><r:img
+                                style="height: 12px; padding: 0px; padding-bottom: 3px; margin: 0px;" dir="images/common"
+                                file="twitter_newbird_white.png" /> Follow Us...</a></li>
+                  </ul>
 				<ul class="nav pull-right">
-					<li><a class="sGroup"
-						title="http://www.lunenfeld.ca/researchers/siminovitch"
-						href="http://www.lunenfeld.ca/researchers/siminovitch"> The
-							Siminovitch Group: </a></li>
+					
 					<li><a class="satellite appIM" title="innovativemedicine.ca"
-						href="http://innovativemedicine.ca"><div>&nbsp;</div>
-							Innovative Medicine</a></li>
+						href="http://innovativemedicine.ca">
+							| Innovative Medicine</a></li>
 					<li><a class="satellite appCG" title="clinicalgenomics.ca"
-						href="http://clinicalgenomics.ca"><div>&nbsp;</div>Clinical
+						href="http://clinicalgenomics.ca">| Clinical
 							Genomics</a></li>
 					<li><a class="satellite appGS" title="geneticservices.ca"
-						href="http://geneticservices.ca"><div>&nbsp;</div>Genetic
+						href="http://geneticservices.ca">| Genetic
 							Services</a></li>
 					<li><a class="satellite appSL" title="simminovitchlab.ca"
-						href="http://siminovitchlab.ca"><div>&nbsp;</div>Siminovitch
+						href="http://siminovitchlab.ca">| Siminovitch
 							Lab</a></li>
 					<li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">Internal<b class="caret"></b>
-					</a>
-
-						<ul id="internalDrop" class="dropdown-menu dropdownMenu">
-                            <li style="font-size: 12px; padding-left: 20px; padding-right: 20px;">Access and visibility&nbsp;restricted&nbsp;to&nbsp;within Mount&nbsp;Sinai&nbsp;Hospital only.</li>
-                            <li>
-                                 <a href="http://172.31.104.12/SampleTracking"><b class="icon-lock"></b>&nbsp;Sample Tracking</a>
-                            </li>
-                             <li>
-                                 <a href="http://172.31.104.12/gsle/mainPage"><b class="icon-lock"></b>&nbsp;Labratory Information Management System</a>
-                            </li>
-							<li>
-							     <a href="http://172.31.104.12/ap"><b class="icon-lock"></b>&nbsp;Analysis Portal</a>
-							</li>
-							<li>
-							     <a href="http://172.31.104.12/iris2"><b class="icon-lock"></b>&nbsp;Inflamatory Research Informatics System 2</a>
-							</li>
-							 
-						</ul></li>
-					<li><a class="sGroup"
-						style="margin-right: 0px; padding-right: 0px;"
-						title="Follow us on Twitter!"
-						href="https://twitter.com/innovative_med"><r:img
-								style="height: 12px;" dir="images/common"
-								file="twitter_newbird_white.png" /> Follow Us...</a></li>
+					<li><a class="satellite appKS"
+                        title="http://www.lunenfeld.ca/researchers/siminovitch"
+                        href="http://www.lunenfeld.ca/researchers/siminovitch">| Kathy Siminovitch</a></li>
+					
+					
 				</ul>
-
+                  
 			</div>
 		</div>
 
-		<div class="navbar-inner" id="upperNav"></div>
+		<div class="navbar-inner" id="upperNav"><!--[if lt IE 9 ]><img style="min-height: 70px; height: 70px;"  src="../images/custom/dnaBG.png"/><![endif]--></div>
 
 		<div class="navbar-inner" id="lowerNav">
 			<div class="container">
