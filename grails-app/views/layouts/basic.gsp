@@ -67,7 +67,7 @@
 			</div>
 		</div>
 
-		<div class="navbar-inner" id="upperNav"><!--[if lt IE 9 ]><img style="min-height: 70px; height: 70px;"  src="../images/custom/dnaBG.png"/><![endif]--></div>
+		<div  id="upperNav"></div>
 
 		<div class="navbar-inner" id="lowerNav">
 			<div class="container">
