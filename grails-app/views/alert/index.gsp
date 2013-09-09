@@ -65,7 +65,7 @@
 
 
 
-
+<!--
 <div id="lafTest" class="modal hide fade">
     <div class="modal-header">
         <h4>Lunch & Learn!</h4>
@@ -92,3 +92,4 @@ at the Rebecca MacDonald Centre,
             onclick="hideAlert('lafTest');">Close</button>
     </div>
 </div>
+-->
