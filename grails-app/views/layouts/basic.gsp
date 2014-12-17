@@ -41,6 +41,19 @@
 								file="twitter_newbird_white.png" /> Follow Us...</a>
 					</li>
 				</ul>
+
+				<g:if test="${session.user != null}">
+					<ul class="laf-logout">
+						<li>
+							<a> Welcome ${session.user.userName }
+							</a>
+						</li>
+						<li>
+							<a href="/login/logout">Logout</a>
+						</li>
+					</ul>
+				</g:if>
+
 				<ul class="nav pull-right">
 
 					<li>
@@ -72,16 +85,10 @@
 	</div>
 	<div class="appstripe" style="background-color: ${grailsApplication.config.laf.appColor};"></div>
 
-
-
-
-
-
 	<div class="container layoutBody">
 
-		<div id="alerts"></div>
 		<g:if test="${flash.message}">
-			<div class="alert alert-block alert-error fade in">
+			<div class="laf-alert alert alert-block alert-error fade in">
 				<strong> ${flash.message}</strong>
 				<!--  ${flash.message = null} -->
 			</div>
@@ -93,27 +100,21 @@
 		</g:if>
 		<g:else>
 
-			<h1>
+			<h1 class="laf-header">
 				${pageProperty(name:'title').replaceAll("- ${grailsApplication.config.laf.siteTitle}","")}
 			</h1>
 
 		</g:else>
-
-
 
 		<g:layoutBody />
 	</div>
 
 
 	<footer class="footer">
-
 		<div class="container">
 			<g:render template="/footer" />
 		</div>
 	</footer>
-	<g:render plugin="laf" template="/layouts/analytics" />
-
-	<g:render plugin="laf" template="/layouts/alert" />
 
 	<r:layoutResources />
 
