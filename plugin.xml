@@ -14,6 +14,7 @@
     <repository name='grailsCentral' url='http://grails.org/plugins' />
     <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
     <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+    <repository name='http://grails.org/plugins' url='http://grails.org/plugins' />
   </repositories>
   <dependencies>
     <runtime>
@@ -22,10 +23,7 @@
   </dependencies>
   <plugins>
     <runtime>
-      <plugin group='org.grails.plugins' name='jquery' version='1.8.0' />
       <plugin group='org.grails.plugins' name='hibernate' version='2.1.1' />
-      <plugin group='org.grails.plugins' name='resources' version='1.1.6' />
-      <plugin group='org.grails.plugins' name='jquery-ui' version='1.8.24' />
     </runtime>
     <build>
       <plugin group='org.grails.plugins' name='tomcat' version='2.1.1' />
